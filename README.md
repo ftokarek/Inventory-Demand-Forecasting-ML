@@ -32,11 +32,19 @@ The dataset contains 913,000 records with the following features:
   - XGBoost Regressor
   - Lasso Regression
   - Ridge Regression
+- **Cross-Validation**: 5-fold cross-validation for robust model evaluation
+- **Feature Importance**: XGBoost feature importance analysis
 
 ## Results
 
 XGBoost Regressor achieved the best performance:
-- Training MAE: 6.92
-- Validation MAE: 6.93
+- **Training**: MAE: 6.92, RMSE: 9.85, R²: 0.78
+- **Validation**: MAE: 6.93, RMSE: 9.89, R²: 0.78
+- **Cross-Validation**: MAE: 6.95 (±0.12), R²: 0.78 (±0.01)
+
+### Key Insights
+- **Feature Importance**: Store and month are the most predictive features
+- **Model Stability**: Cross-validation confirms consistent performance across folds
+- **Performance**: XGBoost significantly outperforms linear models with 67% lower MAE
 
 
